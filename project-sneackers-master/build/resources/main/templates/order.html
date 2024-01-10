@@ -1,0 +1,44 @@
+#parse("base.html")
+#@mainLayout()
+<h1>Order here</h1>
+
+<form action="/traitement-du-formulaire" method="post">
+
+    <label for="sneakers">Choisissez une marque et votre pointure :</label>
+    <select id="sneakers" name="sneakers" required>
+        <option value="nike">Nike</option>
+        <option value="adidas">Adidas</option>
+        <option value="asics">Asics</option>
+        <option value="Puma">Puma</option>
+    </select>
+
+    <select id="sneakersSize" name="sneakersSize" required>
+        <option value="40">40</option>
+        <option value="41">41</option>
+        <option value="42">42</option>
+        <option value="43">43</option>
+    </select>
+
+    <br>
+
+    <label for="socks">Choisissez une marque et votre taille de chaussettes :</label>
+    <select id="socks" name="socks" required>
+        <option value="nike">Nike</option>
+        <option value="adidas">Adidas</option>
+        <option value="asics">Asics</option>
+        <option value="Puma">Puma</option>
+    </select>
+
+    <select id="socksSize" name="socksSize" required>
+        <option value="40">40</option>
+        <option value="41">41</option>
+        <option value="42">42</option>
+        <option value="43">43</option>
+    </select>
+
+    <br>
+
+    <input type="submit" value="Envoyer">
+</form>
+
+#end

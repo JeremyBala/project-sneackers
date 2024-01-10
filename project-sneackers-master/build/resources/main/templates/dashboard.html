@@ -1,0 +1,27 @@
+#parse("base.html")
+#@mainLayout()
+<h1>MYSTERY SNEAKERS</h1>
+
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>TypeName</th>
+        <th>State</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    #foreach ($i in $items)
+    <tr>
+        <td>$velocityCount</td>
+        <td>$i.getTypeName()</td>
+        <td>$i.getState().name()</td>
+        <td>$i.getDescription()</td>
+    </tr>
+    #end
+    </tbody>
+</table>
+
+#end
